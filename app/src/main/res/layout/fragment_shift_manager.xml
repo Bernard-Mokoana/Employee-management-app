@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Input for Shift ID -->
+    <EditText
+        android:id="@+id/shift_id_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Shift ID"
+        android:inputType="text"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Input for Shift Details -->
+    <EditText
+        android:id="@+id/shift_details_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Shift Details"
+        android:inputType="text"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Button to Update Shift -->
+    <Button
+        android:id="@+id/update_shift_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Shift"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Button to Approve Request -->
+    <Button
+        android:id="@+id/approve_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Approve Request"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Button to Deny Request -->
+    <Button
+        android:id="@+id/deny_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deny Request"
+        android:layout_marginBottom="8dp" />
+
+    <!-- List View to Display Time-Off Requests -->
+    <ListView
+        android:id="@+id/requests_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" />
+
+</LinearLayout>

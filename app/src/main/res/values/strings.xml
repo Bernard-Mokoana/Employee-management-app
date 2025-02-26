@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Employee Roster</string>
+    <string name="profile_image_desc">Profile Image</string>
+    <!-- Drawer toggle strings for accessibility -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="select_role_prompt">Select Role</string>
+
+    <string name="create_user">Create User</string>
+    <string name="view_roster">View Roster</string>
+    <string name="grant_time_off">Grant Time Off</string>
+    <string name="check_attendance">Check Attendance</string>
+    <string name="logout">Logout</string>
+    <string name="approve_time_off">Approve Time Off Requests</string>
+    <string name="view_schedule">View Schedule</string>
+
+
+    <string-array name="user_roles">
+        <item>Choose a role</item>
+        <item>General Stuff</item>
+        <item>Manager</item>
+        <item>Admin</item>
+    </string-array>
+
+
+    <string-array name="roles_array">
+        <item>General Stuff</item>
+        <item>Manager</item>
+        <item>Admin</item>
+    </string-array>
+
+
+    <string name="app_logo_description">Employee Roster Logo</string>
+
+    <!-- Styles for Day Headers in the Roster -->
+    <style name="DayHeaderStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#666666</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+    <!-- Styles for Shift Input Fields -->
+    <style name="ShiftEditStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">#EFEFEF</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:textColor">#333333</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,40 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- TextView for Workdays -->
+    <TextView
+        android:id="@+id/work_days_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Work Days"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- TextView for Company Updates -->
+    <TextView
+        android:id="@+id/company_updates_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Company Updates"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- ListView for Meeting Schedules -->
+    <ListView
+        android:id="@+id/meeting_schedules_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Button to Request Leave -->
+    <Button
+        android:id="@+id/request_leave_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Request Leave" />
+
+</LinearLayout>

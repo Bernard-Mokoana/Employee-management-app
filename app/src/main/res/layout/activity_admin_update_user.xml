@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Staff Number Input Field to search for the user -->
+        <EditText
+            android:id="@+id/staff_number_input"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Enter Staff Number to Search"
+            android:inputType="text" /> <!-- Allows letters and numbers -->
+
+        <Button
+            android:id="@+id/search_user_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Search User"
+            android:layout_marginBottom="24dp" />
+
+        <!-- User details fields -->
+        <EditText
+            android:id="@+id/first_name_input"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="First Name"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/last_name_input"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Last Name"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/contact_number_input"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Contact Number"
+            android:inputType="phone"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/id_number_input"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="ID Number"
+            android:inputType="number"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/email_input"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:layout_marginBottom="16dp" />
+
+        <Spinner
+            android:id="@+id/role_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="16dp"
+            android:spinnerMode="dropdown"
+            android:layout_gravity="center" />
+
+        <Button
+            android:id="@+id/update_user_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update User"
+            android:layout_marginBottom="16dp" />
+
+    </LinearLayout>
+
+</ScrollView>

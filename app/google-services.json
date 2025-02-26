@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "103362743095",
+    "firebase_url": "https://employeerostersystem-default-rtdb.firebaseio.com",
+    "project_id": "employeerostersystem",
+    "storage_bucket": "employeerostersystem.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:103362743095:android:8a4fd45baa4713964228b2",
+        "android_client_info": {
+          "package_name": "com.employeeroster"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBc0zGztMCBuCLPmifLaMtoNSS0n1ZbKpw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

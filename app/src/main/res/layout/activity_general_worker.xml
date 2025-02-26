@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- TextView to display the staff number -->
+        <TextView
+            android:id="@+id/worker_staff_number_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Staff Number: "
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="16dp" />
+
+        <Button
+            android:id="@+id/clock_in_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Clock In"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#A6755B"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            android:textStyle="bold"
+            android:elevation="4dp" />
+
+        <Button
+            android:id="@+id/clock_out_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Clock Out"
+            android:backgroundTint="#A6755B"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            android:textStyle="bold"
+            android:elevation="4dp" />
+
+        <Button
+            android:id="@+id/view_roster_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#A6755B"
+            android:elevation="4dp"
+            android:padding="12dp"
+            android:text="View Roster"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/request_time_off_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Request Time Off"
+            android:backgroundTint="#A6755B"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            android:textStyle="bold"
+            android:elevation="4dp" />
+
+        <Button
+            android:id="@+id/swap_shift_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Request Shift Swap"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#A6755B"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            android:textStyle="bold"
+            android:elevation="4dp" />
+
+        <Button
+            android:id="@+id/logout_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:backgroundTint="#A6755B"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            android:textStyle="bold"
+            android:elevation="4dp" />
+
+    </LinearLayout>
+</ScrollView>

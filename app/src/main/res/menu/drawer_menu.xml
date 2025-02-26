@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <!-- Manager Menu Items -->
+    <item
+        android:id="@+id/nav_view_schedule"
+        android:title="View Schedule"
+        android:icon="@drawable/ic_schedule"/>
+    <item
+        android:id="@+id/nav_approve_requests"
+        android:title="Approve Time Off Requests" />
+    <item
+        android:id="@+id/nav_track_attendance"
+        android:title="Track Attendance" />
+    <item
+        android:id="@+id/nav_post_updates"
+        android:title="Post Updates" />
+    <item
+        android:id="@+id/nav_shift_swaps"
+        android:title="Approve/Decline Shift Swaps" />
+    <item
+        android:id="@+id/nav_logout"
+        android:title="Logout" />
+</menu>

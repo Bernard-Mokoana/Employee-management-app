@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#0B0B0B</color>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="primaryColor">#FF6200EE</color>
+    <color name="buttonColor">#FF3700B3</color>
+    <color name="loginBackground">#F0F0F0</color>
+    <color name="linkColor">#007BFF</color>
+    <color name="secondaryColor">#FF6200EE</color>
+    <color name="colorAccent">#001101</color>
+</resources>

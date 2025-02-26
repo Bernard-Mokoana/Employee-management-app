@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal"
+    android:background="?android:attr/colorBackground">
+
+    <!-- Header TextView for the Manager's Dashboard -->
+    <TextView
+        android:id="@+id/header_dashboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Manager's Dashboard"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"
+        android:textColor="?android:attr/textColorPrimary" />
+
+    <!-- Buttons for manager actions -->
+    <Button
+        android:id="@+id/btn_view_schedule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Schedule"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btn_update_roster"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Update Roster" />
+
+    <Button
+        android:id="@+id/btn_approve_requests"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Approve Time-Off Requests"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btn_track_attendance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Track Attendance"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btn_shift_swaps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Manage Shift Swaps"
+        android:layout_marginBottom="16dp" />
+
+    <!-- New Update Roster Button -->
+
+    <Button
+        android:id="@+id/btn_post_updates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Post Updates" />
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout" />
+
+</LinearLayout>

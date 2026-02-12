@@ -12,21 +12,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.EmployeeRoster"
-        tools:targetApi="31"
-        tools:ignore="ExtraText">
-
-        android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-
-
+        tools:targetApi="31">
 
         <!-- Splash Screen Activity -->
-
-                <activity android:name=".SplashScreenActivity"
+        <activity
+            android:name="com.employeeroster.ui.activity.SplashScreenActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
@@ -38,64 +28,48 @@
 
         <!-- Login Activity -->
         <activity
-            android:name=".LoginActivity"
+            android:name="com.employeeroster.ui.activity.LoginActivity"
             android:exported="true"
             android:label="Login"
             android:theme="@style/Theme.EmployeeRoster" />
 
         <!-- Admin Activity -->
         <activity
-            android:name=".AdminActivity"
+            android:name="com.employeeroster.ui.activity.AdminActivity"
             android:label="Admin Dashboard"
-            android:exported="true"/>
+            android:exported="true" />
 
         <!-- Manager Activity -->
         <activity
-            android:name=".ManagerActivity"
+            android:name="com.employeeroster.ui.activity.ManagerActivity"
             android:label="Manager Dashboard"
-            android:exported="true"/>
+            android:exported="true" />
 
         <!-- General Worker Activity -->
         <activity
-            android:name=".GeneralWorkerActivity"
+            android:name="com.employeeroster.ui.activity.GeneralWorkerActivity"
             android:label="General Worker"
             android:exported="true"
-            android:theme="@style/Theme.EmployeeRoster"/>
+            android:theme="@style/Theme.EmployeeRoster" />
 
-        <!-- Roster Activity -->
-        <activity android:name=".RosterActivity" />
-
-        <!-- Logout Activity -->
-        <activity
-            android:name=".LogoutActivity"
-            android:label="Logout"
-            android:exported="true"/>
-
-        <!-- Create User Activity -->
-        <activity
-            android:name=".CreateUserActivity"
-            android:label="Create User"
-            android:exported="true"/>
-
-        <activity android:name=".RosterManager" />
-        <activity android:name=".ShiftManager" />
-        <activity android:name=".SwapShiftActivity" />
-        <activity android:name=".LeaveRequestActivity"/>
-
-        <!-- Forgot Password Activity -->
-        <activity
-            android:name=".ForgotPasswordActivity"
-            android:label="Forgot Password"
-            android:exported="true"/>
-
-        <activity android:name=".TimeOffManagerActivity" />
-        <activity android:name=".TrackAttendanceActivity"/>
-        <activity android:name=".ManageShiftSwapsActivity"/>
-        <activity android:name=".ViewScheduleActivity"/>
-        <activity android:name=".AdminUpdateUserActivity"/>
-        <activity android:name=".DeleteUserActivity" />
-        <activity android:name=".ViewRosterActivity"/>
-
+        <activity android:name="com.employeeroster.ui.activity.CompanyNewsActivity" />
+        <activity android:name="com.employeeroster.ui.activity.CreateUserActivity" />
+        <activity android:name="com.employeeroster.ui.activity.AdminUpdateUserActivity" />
+        <activity android:name="com.employeeroster.ui.activity.DeleteUserActivity" />
+        <activity android:name="com.employeeroster.ui.activity.EmployeeDashboardActivity" />
+        <activity android:name="com.employeeroster.ui.activity.EmployeeProfile" />
+        <activity android:name="com.employeeroster.ui.activity.ForgotPasswordActivity" />
+        <activity android:name="com.employeeroster.ui.activity.LeaveRequestActivity" />
+        <activity android:name="com.employeeroster.ui.activity.LogoutActivity" />
+        <activity android:name="com.employeeroster.ui.activity.ManageShiftSwapsActivity" />
+        <activity android:name="com.employeeroster.ui.activity.PendingLeaveRequestsActivity" />
+        <activity android:name="com.employeeroster.ui.activity.RosterActivity" />
+        <activity android:name="com.employeeroster.ui.activity.ShiftManager" />
+        <activity android:name="com.employeeroster.ui.activity.SwapShiftActivity" />
+        <activity android:name="com.employeeroster.ui.activity.TimeOffManagerActivity" />
+        <activity android:name="com.employeeroster.ui.activity.TrackAttendanceActivity" />
+        <activity android:name="com.employeeroster.ui.activity.ViewRosterActivity" />
+        <activity android:name="com.employeeroster.ui.activity.ViewScheduleActivity" />
 
     </application>
 

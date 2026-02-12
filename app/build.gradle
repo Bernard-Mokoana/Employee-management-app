@@ -6,6 +6,24 @@ plugins {
 
 }
 
+// Function to read .env file
+def getEnvValue(String key, String defaultValue = "") {
+    def envFile = file('.env')
+    if (envFile.exists()) {
+        def lines = envFile.readLines()
+        for (line in lines) {
+            // Skip comments and empty lines
+            if (line && !line.trim().startsWith("#")) {
+                def parts = line.split("=", 2)
+                if (parts.length == 2 && parts[0].trim() == key) {
+                    return parts[1].trim()
+                }
+            }
+        }
+    }
+    return defaultValue
+}
+
 android {
     namespace 'com.employeeroster'
     compileSdk 34
@@ -18,6 +36,18 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        // Load environment variables from .env file
+        buildConfigField "String", "FIREBASE_API_KEY", "\"${getEnvValue('FIREBASE_API_KEY', '')}\""
+        buildConfigField "String", "FIREBASE_PROJECT_ID", "\"${getEnvValue('FIREBASE_PROJECT_ID', '')}\""
+        buildConfigField "String", "FIREBASE_APP_ID", "\"${getEnvValue('FIREBASE_APP_ID', '')}\""
+        buildConfigField "String", "FIREBASE_STORAGE_BUCKET", "\"${getEnvValue('FIREBASE_STORAGE_BUCKET', '')}\""
+        buildConfigField "String", "FIREBASE_MESSAGING_SENDER_ID", "\"${getEnvValue('FIREBASE_MESSAGING_SENDER_ID', '')}\""
+        buildConfigField "String", "FIREBASE_DATABASE_URL", "\"${getEnvValue('FIREBASE_DATABASE_URL', '')}\""
+        buildConfigField "String", "API_KEY", "\"${getEnvValue('API_KEY', '')}\""
+        buildConfigField "String", "SECRET_KEY", "\"${getEnvValue('SECRET_KEY', '')}\""
+        buildConfigField "String", "ENCRYPTION_KEY", "\"${getEnvValue('ENCRYPTION_KEY', '')}\""
+        buildConfigField "String", "JWT_SECRET", "\"${getEnvValue('JWT_SECRET', '')}\""
     }
 
     buildTypes {
@@ -29,6 +59,10 @@ android {
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildFeatures {
+        buildConfig true
     }
 }
 
@@ -42,6 +76,9 @@ dependencies {
     testImplementation libs.junit
     androidTestImplementation libs.ext.junit
     androidTestImplementation libs.espresso.core
+
+    implementation "androidx.lifecycle:lifecycle-viewmodel:2.6.2"
+    implementation "androidx.lifecycle:lifecycle-livedata:2.6.2"
 
 
     // Import the Firebase BoM

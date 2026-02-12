@@ -1,14 +1,14 @@
 {
   "project_info": {
-    "project_number": "103362743095",
-    "firebase_url": "https://employeerostersystem-default-rtdb.firebaseio.com",
-    "project_id": "employeerostersystem",
-    "storage_bucket": "employeerostersystem.appspot.com"
+    "project_number": "REPLACE_ME",
+    "firebase_url": "https://REPLACE_ME.firebaseio.com",
+    "project_id": "REPLACE_ME",
+    "storage_bucket": "REPLACE_ME.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:103362743095:android:8a4fd45baa4713964228b2",
+        "mobilesdk_app_id": "REPLACE_ME",
         "android_client_info": {
           "package_name": "com.employeeroster"
         }
@@ -16,7 +16,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyBc0zGztMCBuCLPmifLaMtoNSS0n1ZbKpw"
+          "current_key": "REPLACE_ME"
         }
       ],
       "services": {

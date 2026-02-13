@@ -1,3 +1,4 @@
 /build
 # Environment variables
 .env
+google-services.json
